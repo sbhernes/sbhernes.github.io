@@ -1,6 +1,6 @@
 ---
-title: "Attending VMware explore 2025 Las Vegas"
-description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
+title: "VMware Explore 2025 — Las Vegas"
+description: "My first trip to the USA for VMware Explore 2025 in Las Vegas: community, sessions and highlights from the week."
 slug: "vmware-explore-2025-las-vegas"
 cover: "/assets/images/4280c17a4ec8f172.jpg"
 draft: false

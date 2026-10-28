@@ -1,6 +1,6 @@
 ---
-title: "Why are there two models?"
-description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
+title: "VCF Automation 9: Understanding the Fundamentals"
+description: "Working through the concepts, models and initial configuration of VMware Cloud Foundation Automation 9."
 slug: "vcf-automation-overview"
 cover: "/assets/images/99dcb728cde74c6c.jpg"
 draft: false
