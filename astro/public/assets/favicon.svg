@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1a29"/><text x="32" y="46" font-family="Georgia,serif" font-size="49" text-anchor="middle" fill="#9bedcd">ᚢ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="VirtualViking helmet logo">
+  <rect width="96" height="96" rx="20" fill="#091722"/>
+  <path d="M12 69V52H5M84 69V52h7M16 25h13M80 25H67M17 79H8M79 79h9" fill="none" stroke="#277f81" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#57c4b2"><circle cx="12" cy="69" r="3"/><circle cx="84" cy="69" r="3"/><circle cx="16" cy="25" r="3"/><circle cx="80" cy="25" r="3"/><circle cx="17" cy="79" r="3"/><circle cx="79" cy="79" r="3"/></g>
+  <path d="M30 33C17 34 12 25 16 10c4 12 12 15 22 15M66 33c13 1 18-8 14-23-4 12-12 15-22 15" fill="#8fa3ac" stroke="#354b54" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M23 39Q25 17 48 17T73 39v17H23Z" fill="#526876" stroke="#0c1b27" stroke-width="4"/>
+  <path d="M28 34Q48 27 68 34M24 45h48" stroke="#90b2b9" stroke-width="5" fill="none"/>
+  <path d="M43 19h10v38H43z" fill="#243844" stroke="#a0b2b6" stroke-width="2"/>
+  <circle cx="48" cy="30" r="2" fill="#a7ead5"/><circle cx="48" cy="43" r="2" fill="#a7ead5"/>
+  <path d="M24 53 34 50l14 5 14-5 10 3-8 18-16 18-16-18Z" fill="#789096" stroke="#152733" stroke-width="4"/>
+  <path d="m28 55 11 3-2 7-8-3m39-7-11 3 2 7 8-3" fill="#0c1d28"/>
+  <path d="m38 66 10 7 10-7-4 12-6 11-6-11Z" fill="#334a55"/>
+  <path d="M48 73v15M36 73l6 7M60 73l-6 7" stroke="#a7b8b8" stroke-width="2" fill="none"/>
+  <path d="M24 50h17M55 50h17" stroke="#5fe0cd" stroke-width="3" stroke-linecap="round"/>
+</svg>
