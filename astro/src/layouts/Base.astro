@@ -15,7 +15,7 @@ const canonical=new URL(canonicalPath,'https://virtualviking.blog').toString();
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <link rel="stylesheet" href="/assets/enhancements.css" />
   <title>{title} · VirtualViking</title>
@@ -23,12 +23,12 @@ const canonical=new URL(canonicalPath,'https://virtualviking.blog').toString();
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-header"><div class="nav-wrap">
-    <a class="brand" href="/" aria-label="VirtualViking home"><span class="brand-icon"><img src="/assets/favicon.svg" width="41" height="41" alt="" /></span><span>VIRTUAL<span class="brand-accent">VIKING</span></span></a>
+    <a class="brand" href="/" aria-label="VirtualViking home"><span class="brand-icon"><img src="/assets/favicon.svg?v=2" width="41" height="41" alt="" /></span><span>VIRTUAL<span class="brand-accent">VIKING</span></span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/blog/">Articles</a><a href="/vexpert/">About</a><a href="/contact/">Contact</a></nav>
   </div></header>
   <main id="content"><slot /></main>
-  <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/"><span class="brand-icon"><img src="/assets/favicon.svg" width="41" height="41" alt="" /></span><span>VIRTUAL<span class="brand-accent">VIKING</span></span></a><p>Plundering the Old Ways, Automating the New.</p></div><div><p>Virtualization · Private cloud · Automation</p><p>© 2026 Sondre Hernes</p></div></div></footer>
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/"><span class="brand-icon"><img src="/assets/favicon.svg?v=2" width="41" height="41" alt="" /></span><span>VIRTUAL<span class="brand-accent">VIKING</span></span></a><p>Plundering the Old Ways, Automating the New.</p></div><div><p>Virtualization · Private cloud · Automation</p><p>© 2026 Sondre Hernes</p></div></div></footer>
   <script src="/assets/site.js" defer></script>
 </body>
 </html>
