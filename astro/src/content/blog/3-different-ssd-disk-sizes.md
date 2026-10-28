@@ -2,6 +2,7 @@
 title: "Validate vSAN disks for ESXi Host(s)"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "3-different-ssd-disk-sizes"
+publishedAt: 2026-04-03
 cover: "/assets/images/5a75de09a2639cc4.png"
 draft: false
 ---

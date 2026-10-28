@@ -2,6 +2,7 @@
 title: "Patching VMware Cloud Foundation from 9.0.1 to 9.0.2"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "patch-901-to-902-mgmt"
+publishedAt: 2026-02-15
 cover: "/assets/images/d377b43ab68400ea.png"
 draft: false
 ---

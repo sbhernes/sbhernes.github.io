@@ -2,6 +2,7 @@
 title: "Patching WLD from 9.0.1 --> 9.0.2"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "patch-901-to-902-wld"
+publishedAt: 2026-02-17
 cover: "/assets/images/c3e30b4e7ce7fd53.png"
 draft: false
 ---
