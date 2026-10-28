@@ -1,12 +1,12 @@
 ---
 title: "VMware Cloud Foundation 9: VCF Installer Walkthrough"
-description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
+description: "A hands-on walkthrough of the VCF 9 Installer, from prerequisites and binary management to deployment, validation and troubleshooting."
 slug: "deployment-vcf-9"
 cover: "/assets/images/f113727f6b7ce255.png"
 draft: false
 ---
 
-### VMware Cloud Foundation (VCF) 9 is the first major release delivered under Broadcom, and it brings several structural changes to how the platform is deployed and operated. The release continues to move the private-cloud experience in the direction of public-cloud consistency by improving integration, automation, and overall operational alignment.
+VMware Cloud Foundation (VCF) 9 is the first major release delivered under Broadcom, and it brings several structural changes to how the platform is deployed and operated. The release continues to move the private-cloud experience in the direction of public-cloud consistency by improving integration, automation, and overall operational alignment.
 
 A key change is the new VCF 9 Installer. Instead of the older Excel-driven Cloud Builder workflow, the installer now provides a more predictable and streamlined process. Notable updates include:
 
@@ -26,47 +26,28 @@ Before jumping into the guide, let’s take a quick look at VCF from a high leve
 <img src="/assets/images/f113727f6b7ce255.png" loading="lazy" />
 </figure>
 
-### Published 12.12.2025
+*Originally published 12 December 2025.*
+
+## Prerequisites and DNS
 
 Accurate DNS configuration is just as important in VCF 9 as in earlier releases. Any missing or incorrect records will cause the pre-checks to fail. The table below shows the DNS entries required for my environment.
 
-### Purpose Info
+| Purpose | Information |
+| --- | --- |
+| VCF 9 Installer | VCF Installer node (bring-up) |
+| ESX | ESXi host 01–04 (Management Domain) |
+| vCenter | vCenter Server for Management Domain |
+| SDDC Manager | SDDC Manager VIP / Management |
+| VCF Automation | VCF Automation appliance |
+| NSX VIP | NSX Manager cluster virtual IP |
+| NSX Manager | NSX Manager nodes 01–03 |
+| VCF Operations (Primary) | Aria Ops (VCF Ops) primary node |
+| VCF Operations (Replica) | Aria Ops (VCF Ops) replica node |
+| VCF Operations (Data) | Aria Ops (VCF Ops) data node |
+| VCF Operations (Collector) | Aria Ops (VCF Ops) remote collector |
+| VCF Fleet Management | VCF Fleet Manager appliance |
 
-VCF 9 Installer VCF Installer node (bring-up)
-
-ESX ESXi host 01 (Mgmt Domain)
-
-ESX ESXi host 02 (Mgmt Domain)
-
-ESX ESXi host 03 (Mgmt Domain)
-
-ESX ESXi host 04 (Mgmt Domain)
-
-vCenter vCenter Server for Mgmt Domain
-
-SDDC Manager SDDC Manager VIP / Management
-
-VCF Automation VCF Automation appliance
-
-NSX VIP NSX Manager Cluster Virtual IP
-
-NSX Manager NSX Manager Node 01
-
-NSX Manager NSX Manager Node 02
-
-NSX Manager NSX Manager Node 03
-
-VCF Operations (Primary) Aria Ops (VCF Ops) Primary Node
-
-VCF Operations (Replica) Aria Ops (VCF Ops) Replica Node
-
-VCF Operations (Data) Aria Ops (VCF Ops) Data Node
-
-VCF Operations (Collector) Aria Ops (VCF Ops) Remote Collector
-
-VCF Fleet Management VCF Fleet Manager appliance
-
-### There are additional prerequisites, but for now we’ll focus on the VCF deployment itself. Naturally, the ESXi v9 hosts must already be installed.
+There are additional prerequisites, but for now we’ll focus on the VCF deployment itself. Naturally, the ESXi v9 hosts must already be installed.
 
 ## VCF Installer Deployment
 
@@ -78,7 +59,9 @@ In my case, I deployed the installer in our existing vSphere environment to keep
 Deploying the installer is straightforward. Simply deploy it like any other VM and provide the required inputs such as passwords, NTP servers, DNS settings, and so on. After completing the customization and clicking Finish, the VCF 9 Installer appliance is deployed.  
 Once powered on, it will auto-configure based on the parameters you provided and should be ready to use after a few minutes.
 
-### **VCF Installer: Binary Management** Once the VCF 9 Installer appliance is deployed and running, the next step is to download and organize the deployment binaries. These files include all components required for bring-up, such as vCenter, NSX, SDDC Manager, Fleet Manager, VCF Operations, and VCF Automation. After logging in to the VCF Installer UI, you’ll be presented with the following view.
+### VCF Installer: Binary Management
+
+Once the VCF 9 Installer appliance is deployed and running, the next step is to download and organize the deployment binaries. These files include all components required for bring-up, such as vCenter, NSX, SDDC Manager, Fleet Manager, VCF Operations, and VCF Automation. After logging in to the VCF Installer UI, you’ll be presented with the following view.
 
 <figure>
 <img src="/assets/images/a5b5870a9997a586.png" loading="lazy" />

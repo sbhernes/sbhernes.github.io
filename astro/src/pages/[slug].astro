@@ -1,12 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
 import {getCollection} from 'astro:content';
+import {topicFor,readingMinutes} from '../lib/topics';
 type Props={post:any};
 export async function getStaticPaths(){const posts=await getCollection('blog',p=>!p.data.draft);return posts.map(post=>({params:{slug:post.slug},props:{post}}));}
 const {post}=Astro.props;
-const {Content}=await post.render();
+const {Content,headings}=await post.render();
+const topic=topicFor(post.slug,post.data.title);
+const readTime=readingMinutes(post.body);
+const toc=headings.filter(h=>h.depth===2||h.depth===3);
 ---
 <Base title={post.data.title} description={post.data.description} canonicalPath={`/${post.slug}`}>
-<div class="article-top"><div class="container"><a class="back" href="/blog/">← All articles</a><span class="eyebrow">VIRTUALVIKING / FIELD NOTES</span><h1>{post.data.title}</h1><p class="article-intro">{post.data.description}</p></div></div>
-<div class="article-layout container"><article class="prose"><Content /></article><aside class="article-aside"><div class="aside-card"><span class="eyebrow">ABOUT THE AUTHOR</span><h3>Sondre Hernes</h3><p>Exploring virtualization, VMware Cloud Foundation and the craft of making infrastructure work better.</p><a href="/blog/">Explore more writing ↗</a></div></aside></div>
+<div class="article-top"><div class="container article-masthead"><a class="back" href="/blog/">← Back to articles</a><div class="article-meta"><a class="topic-pill" href={`/blog/?topic=${topic.id}`}>{topic.label}</a><span class="meta-separator">/</span><span>{readTime} min read</span><span class="meta-separator">/</span><span>Field notes</span></div><h1>{post.data.title}</h1><p class="article-intro">{post.data.description}</p><div class="author-line"><span class="author-avatar">SH</span><div><strong>Sondre Hernes</strong><span>Virtualization & private cloud</span></div></div></div></div>
+<div class="article-layout container"><article class="prose" id="article-content"><Content /><div class="end-note"><span class="eyebrow">END OF FIELD NOTE</span><h3>Keep exploring.</h3><p>More practical lessons and technical deep dives from the VirtualViking lab.</p><a class="primary-button" href="/blog/">Browse all articles ↗</a></div></article><aside class="article-aside"><div class="article-sidebar-inner">{toc.length>0&&<nav class="toc-card" aria-label="On this page"><span class="eyebrow">ON THIS PAGE</span><ol>{toc.map(h=><li class:list={{'toc-sub':h.depth===3}}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav>}<div class="aside-card"><span class="eyebrow">ABOUT THE AUTHOR</span><h3>Sondre Hernes</h3><p>VMware vExpert sharing field-tested lessons on VCF, vSphere and infrastructure automation.</p><a href="/vexpert/">Get to know me ↗</a></div></div></aside></div>
 </Base>
