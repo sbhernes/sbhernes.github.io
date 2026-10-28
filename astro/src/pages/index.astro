@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import {getCollection} from 'astro:content';
+const posts=(await getCollection('blog',p=>!p.data.draft)).filter(p=>!['contact','disclaimer','test'].includes(p.slug));
+const priority=['deployment-vcf-9','vmware-explore-2025-las-vegas','vcf-automation-overview'];
+const featured=priority.map(s=>posts.find(p=>p.slug===s)).filter(Boolean);
+---
+<Base title="VirtualViking — Private Cloud & Virtualization" description="Technical field notes on VMware, VCF, virtualization and automation by Sondre Hernes.">
+<section class="hero"><div class="container hero-content"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> INDEPENDENT TECH BLOG · EST. 2024</div><h1>Plundering the old ways.<br /><em>Automating the new.</em></h1><p>Real-world insights into VMware, private cloud, virtualization and infrastructure automation. Written from the field, built for the curious.</p><div class="hero-actions"><a class="primary-button" href="/blog/">Explore the articles <span>↗</span></a><a class="text-button" href="/vexpert/">Meet the author →</a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-core">ᚢ</div><div class="art-label label-a">VCF 9.0</div><div class="art-label label-b">AUTOMATION</div><div class="art-label label-c">PRIVATE CLOUD</div></div></div></section>
+<section class="container spotlight"><div class="section-heading"><div><span class="eyebrow">FRESH FROM THE LAB</span><h2>Latest field notes<span class="heading-dot">.</span></h2></div><a href="/blog/">View all articles ↗</a></div><div class="article-grid">
+{featured.map(post=><a class="article-card" href={`/${post.slug}/`}><div class="card-image">{post.data.cover?<img src={post.data.cover} alt="" loading="lazy" />:<span class="card-placeholder">ᚢ</span>}</div><div class="card-body"><span class="card-kicker">FIELD NOTES / TECH</span><h3>{post.data.title}</h3><p>{post.data.description}</p><span class="card-link">Read article ↗</span></div></a>)}
+</div></section>
+<section class="topics-section"><div class="container"><span class="eyebrow">WHAT I WRITE ABOUT</span><h2>From the hypervisor<br />to the <em>big picture.</em></h2><div class="topic-grid"><a href="/blog/?q=VCF"><span class="topic-number">01 /</span><h3>VMware Cloud Foundation</h3><p>Deployments, operations and lessons from VCF environments.</p><span class="topic-arrow">↗</span></a><a href="/blog/?q=automation"><span class="topic-number">02 /</span><h3>Automation</h3><p>Repeatable infrastructure with Ansible, APIs and practical tooling.</p><span class="topic-arrow">↗</span></a><a href="/blog/?q=ESXi"><span class="topic-number">03 /</span><h3>Virtualization</h3><p>Hands-on troubleshooting, performance and platform engineering.</p><span class="topic-arrow">↗</span></a></div></div></section>
+</Base>

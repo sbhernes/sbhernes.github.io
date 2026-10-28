@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import {getCollection} from 'astro:content';
+const posts=(await getCollection('blog',p=>!p.data.draft)).filter(p=>!['contact','disclaimer','test'].includes(p.slug));
+---
+<Base title="Articles" description="Technical posts about VMware, virtualization, VCF and automation.">
+<section class="listing-hero"><div class="container"><span class="eyebrow">THE KNOWLEDGE BASE</span><h1>Notes from the <em>field.</em></h1><p>Deep dives, real-world fixes and ideas from the world of virtualization and private cloud.</p><label class="search-wrap"><span>⌕</span><input id="article-search" type="search" placeholder="Search articles, VMware, VCF, automation…" autocomplete="off" aria-label="Search articles" /></label></div></section>
+<section class="container articles-section"><div class="section-heading"><h2>All articles</h2><span id="result-count"></span></div><div class="article-grid" id="article-grid">
+{posts.map(post=><a class="article-card" data-search={`${post.data.title} ${post.data.description} ${post.slug}`.toLowerCase()} href={`/${post.slug}/`}><div class="card-image">{post.data.cover?<img src={post.data.cover} alt="" loading="lazy" />:<span class="card-placeholder">ᚢ</span>}</div><div class="card-body"><span class="card-kicker">FIELD NOTES / TECH</span><h3>{post.data.title}</h3><p>{post.data.description}</p><span class="card-link">Read article ↗</span></div></a>)}
+</div><p class="empty-state" id="no-results" hidden>No matching articles. Try another search.</p></section>
+<script is:inline>
+const search=document.querySelector('#article-search'),cards=[...document.querySelectorAll('#article-grid .article-card')],count=document.querySelector('#result-count'),empty=document.querySelector('#no-results');
+const initial=new URLSearchParams(location.search).get('q');if(initial)search.value=initial;
+function filter(){const q=search.value.trim().toLowerCase();let matches=0;for(const card of cards){const show=card.dataset.search.includes(q);card.hidden=!show;if(show)matches++}count.textContent=matches+' articles';empty.hidden=matches!==0}
+search.addEventListener('input',filter);filter();
+</script>
+</Base>
