@@ -18,7 +18,7 @@ const canonical=new URL(canonicalPath,'https://virtualviking.blog').toString();
   <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <link rel="stylesheet" href="/assets/enhancements.css" />
-  {canonicalPath==='/explore-2026' && <link rel="stylesheet" href="/assets/explore-gallery.css" />}
+  {['/explore-2026','/vmware-explore-2025-las-vegas','/vmexplorer-2024'].includes(canonicalPath) && <link rel="stylesheet" href="/assets/explore-gallery.css" />}
   <title>{title} · VirtualViking</title>
 </head>
 <body>
