@@ -3,7 +3,7 @@ title: "ESXi Knowledge Articles"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "esxi"
 cover: "/assets/images/fd6c82af736ab6a0.webp"
-draft: false
+draft: true
 ---
 
 ### Knowledge articles ESXi

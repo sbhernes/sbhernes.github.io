@@ -3,7 +3,7 @@ title: "Knowledge articles Ansible"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "ansible"
 cover: "/assets/images/9def0f68ade7649e.webp"
-draft: false
+draft: true
 ---
 
 ### Knowledge articles Ansible

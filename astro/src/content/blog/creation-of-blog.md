@@ -3,7 +3,7 @@ title: "Blog creation"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "creation-of-blog"
 cover: ""
-draft: false
+draft: true
 ---
 
 # Blog creation
