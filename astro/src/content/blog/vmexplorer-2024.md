@@ -78,30 +78,15 @@ Finally, spending a week in Barcelona with the team strengthened our bonds and g
 
 My Experience at VMware Explore 2024 in Barcelona
 
-<figure>
-<img src="/assets/images/bea51588e9143890.png" loading="lazy" />
-</figure>
+<div class="explore-gallery explore-gallery--three" aria-label="VMware Explore 2024 in Barcelona, first gallery">
+  <img src="/assets/images/bea51588e9143890.png" alt="VMware Explore 2024 photo 1" loading="lazy" />
+  <img src="/assets/images/d6cd3872532e152b.png" alt="VMware Explore 2024 photo 2" loading="lazy" />
+  <img src="/assets/images/889938afd7f695fd.png" alt="VMware Explore 2024 photo 3" loading="lazy" />
+</div>
 
-<figure>
-<img src="/assets/images/d6cd3872532e152b.png" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/889938afd7f695fd.png" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/8bc7a1fae17d5e98.jpg" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/dd47dfb3e3e2620f.jpg" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/ec04ec4f64a5e46f.png" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/6be347ccb4d1fbaf.png" loading="lazy" />
-</figure>
+<div class="explore-gallery explore-gallery--four" aria-label="VMware Explore 2024 in Barcelona, second gallery">
+  <img src="/assets/images/8bc7a1fae17d5e98.jpg" alt="VMware Explore 2024 photo 4" loading="lazy" />
+  <img src="/assets/images/dd47dfb3e3e2620f.jpg" alt="VMware Explore 2024 photo 5" loading="lazy" />
+  <img src="/assets/images/ec04ec4f64a5e46f.png" alt="VMware Explore 2024 photo 6" loading="lazy" />
+  <img src="/assets/images/6be347ccb4d1fbaf.png" alt="VMware Explore 2024 photo 7" loading="lazy" />
+</div>
