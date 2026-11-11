@@ -3,6 +3,7 @@ title: "VMware Explore 2025 — Las Vegas"
 description: "My first trip to the USA for VMware Explore 2025 in Las Vegas: community, sessions and highlights from the week."
 slug: "vmware-explore-2025-las-vegas"
 cover: "/assets/images/4280c17a4ec8f172.jpg"
+publishedAt: 2025-09-04
 draft: false
 ---
 
@@ -71,7 +72,6 @@ The day wrapped up with the VMware Explore Party. Held on the pool deck at The P
 
 Looking back, VMware Explore was so much more than sessions, keynotes, and technology. It was an incredible team building journey. Traveling, learning, and celebrating together strengthened the connection with my colleagues, while also deepening my connection to the VMware community. Truly an unforgettable experience.
 
-### Posted: 04.09.2025
 
 <figure>
 <img src="/assets/images/4280c17a4ec8f172.jpg" loading="lazy" />

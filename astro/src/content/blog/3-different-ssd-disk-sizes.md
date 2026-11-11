@@ -15,7 +15,6 @@ draft: false
 
 While deploying a new workload domain in VMware Cloud Foundation, we ran into an issue that caused the deployment to fail during the vSAN disk validation step. The error was not immediately obvious, but it turned out to be related to disk size consistency on the ESXi hosts. This guide explains how to bypass this pre-deployment check during the deployment process. I strongly recommend consulting Broadcom support before proceeding, as skipping this validation may have unintended consequences and is not generally recommended without guidance.
 
-### POSTED 03.04.2026
 
 This is a picture of the error
 

@@ -11,7 +11,6 @@ draft: false
 
 ## With the release of **VMware Cloud Foundation 9.0.2**, Broadcom introduces fixes and stability improvements on top of 9.0.1. In this post, I’ll cover the patching process from **VCF 9.0.1 to 9.0.2**, highlighting key prerequisites, the upgrade flow, and a few important things to watch out for to ensure a smooth update.
 
-### POSTED 15.02.2026
 
 ### VCF Operations is the central lifecycle management engine for both the Management Domain and core infrastructure components in VMware Cloud Foundation. In this upgrade, I’ll be using the online depot, allowing VCF Operations to automatically download, stage, and apply the required patches directly from Broadcom.
 

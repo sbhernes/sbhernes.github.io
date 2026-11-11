@@ -8,7 +8,6 @@ draft: false
 
 ### How to deploy Private AI foundations for vcf 9
 
-Posted: XXXXX
 
 We are currently setting up Private AI Foundation (PAIF) in our VCF 9 environment. This guide walks through how we deployed PAIF in our setup.
 

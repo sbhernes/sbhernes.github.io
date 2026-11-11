@@ -3,6 +3,7 @@ title: "No Images, No Progress: A Workload Domain Deployment Issue"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "esx-images-not-showing"
 cover: "/assets/images/51b5f37d539f30b4.png"
+publishedAt: 2025-12-28
 draft: false
 ---
 
@@ -45,7 +46,6 @@ The issue was caused by new metadata that has been introduced in the ESXi host i
 
 When creating a new cluster or WLD, the image version is retrieved from the management domain. With the updated image metadata in place, this is how it now appears:
 
-Posted: 28.12.2025
 
 ### Thank you for reading. Hopefully you won’t run into the same issue we did, but if you’re unable to see any images when deploying a new cluster or workload domain, this could very well be the cause. Make sure to verify the metadata on the ISO.
 

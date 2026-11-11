@@ -9,7 +9,6 @@ draft: false
 
 # Patching WLD from 9.0.1 --\> 9.0.2
 
-### POSTED 17.02.2026
 
 This article is a follow-up to my previous post: <u>[patching mgmt](/patch-901-to-902-wld)</u>. In this guide, I’ll walk through how we approach upgrading Workload Domains in VCF 9  
 The update sequence we follow is:

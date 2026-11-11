@@ -3,6 +3,7 @@ title: "VMware Explore 2024 — Barcelona"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "vmexplorer-2024"
 cover: "/assets/images/bea51588e9143890.png"
+publishedAt: 2025-01-06
 draft: false
 ---
 
@@ -104,5 +105,3 @@ My Experience at VMware Explore 2024 in Barcelona
 <figure>
 <img src="/assets/images/6be347ccb4d1fbaf.png" loading="lazy" />
 </figure>
-
-Posted 06.01.2025

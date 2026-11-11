@@ -3,6 +3,7 @@ title: "My Journey Into the VMware vExpert Community"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "vexpert"
 cover: "/assets/images/bea51588e9143890.png"
+publishedAt: 2026-01-22
 draft: false
 ---
 
@@ -31,7 +32,6 @@ Their answer stuck with me:
 
 That conversation planted a seed.
 
-### POSTED 22.01.2026
 
 <figure>
 <img src="/assets/images/bea51588e9143890.png" loading="lazy" />

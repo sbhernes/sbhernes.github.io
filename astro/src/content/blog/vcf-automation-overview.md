@@ -32,7 +32,6 @@ Different teams have different ways of working:
 
 In this article, we will focus on the All Apps model and explore how it can be used to design a flexible and scalable platform with VCF Automation.
 
-### POSTED XXX XXX
 
 <figure>
 <img src="/assets/images/99dcb728cde74c6c.jpg" loading="lazy" alt="Bright living room with modern inventory" />

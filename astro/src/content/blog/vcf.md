@@ -3,6 +3,7 @@ title: "VMware Cloud Foundation - Platform to build and manage cloud infrastruct
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "vcf"
 cover: "/assets/images/da00a52936af24b4.png"
+publishedAt: 2025-03-30
 draft: false
 ---
 
@@ -142,7 +143,6 @@ Although setting up VCF can appear challenging initially, there is a wealth of h
 <img src="/assets/images/7c42dcd3f065049f.png" loading="lazy" />
 </figure>
 
-Posted 30.03 2025
 
 <figure>
 <img src="/assets/images/eca4add89d19ce60.png" loading="lazy" />

@@ -3,6 +3,7 @@ title: "Keynote VMware explore 2025"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "vmware-explore-2025-las-vegas-key-note"
 cover: "/assets/images/a5227c0952397c49.jpg"
+publishedAt: 2025-09-02
 draft: false
 ---
 
@@ -148,5 +149,3 @@ The big news? Private AI is now natively integrated into VCF 9.0. This means all
 <figure>
 <img src="/assets/images/a21cb67d5109eda5.png" loading="lazy" />
 </figure>
-
-### Posted 02.09.2025

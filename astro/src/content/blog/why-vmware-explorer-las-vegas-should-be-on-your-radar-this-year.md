@@ -3,12 +3,12 @@ title: "Why You Should Attend Explorer Las Vegas AUGUST 25 – 28"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "why-vmware-explorer-las-vegas-should-be-on-your-radar-this-year"
 cover: "/assets/images/692378bb04b774ba.jpg"
+publishedAt: 2025-06-21
 draft: false
 ---
 
 **Why VMware Explorer Las Vegas Should Be on Your Radar This Year**
 
-Posted 21.06 2025
 
 In this article, I’ll share why I believe it’s a must-attend event based on my own experience from the past years. I’ll also walk you through the top sessions I’m most excited about this year, especially those that tackle real-world challenges like VCF implementation, migration, and automation.
 

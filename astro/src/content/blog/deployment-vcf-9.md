@@ -3,6 +3,7 @@ title: "VMware Cloud Foundation 9: VCF Installer Walkthrough"
 description: "A hands-on walkthrough of the VCF 9 Installer, from prerequisites and binary management to deployment, validation and troubleshooting."
 slug: "deployment-vcf-9"
 cover: "/assets/images/f113727f6b7ce255.png"
+publishedAt: 2025-12-12
 draft: false
 ---
 
@@ -26,7 +27,6 @@ Before jumping into the guide, let’s take a quick look at VCF from a high leve
 <img src="/assets/images/f113727f6b7ce255.png" loading="lazy" />
 </figure>
 
-*Originally published 12 December 2025.*
 
 ## Prerequisites and DNS
 

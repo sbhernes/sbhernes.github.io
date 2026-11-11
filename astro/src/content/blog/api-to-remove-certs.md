@@ -3,6 +3,7 @@ title: "Remove certificate in fleet manager"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "api-to-remove-certs"
 cover: "/assets/images/90a1576760196c78.png"
+publishedAt: 2025-12-03
 draft: false
 ---
 
@@ -54,7 +55,6 @@ irm -method DELETE -headers \$fleetheader -uri "[\<fleet manager fqdn\>/lcm/lock
 
 With the correct API endpoints and the certificate vmid, removing unused or incorrect certificates from Fleet Manager becomes a straightforward task. Until certificate management is fully exposed through the UI, the API provides a reliable and efficient way to keep your VCF environment clean and consistent.  
 
-# Posted 3.12.2025
 
 <figure>
 <img src="/assets/images/1047e704e03267c3.png" loading="lazy" />

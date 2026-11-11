@@ -3,6 +3,7 @@ title: "Simplifying Aria Operations Alarm Notifications in Slack"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "operations-to-slack"
 cover: ""
+publishedAt: 2025-10-21
 draft: false
 ---
 
@@ -265,5 +266,3 @@ Hope this was helpful, thank you for reading.
 ## However, we encountered an issue, the alarm messages were too long and difficult to read due to excessive details in the payload. To solve this, we decided to customize and simplify the alarm payload before sending it to Slack.
 
 ## This article explains how we modified the payload to make alarm notifications clearer and more readable.
-
-### Posted 21.10.2025
