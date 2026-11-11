@@ -21,11 +21,11 @@ Since we had some time before the conference started, we used the opportunity to
 
 Las Vegas is definitely one of those places where there is always something happening. Between the Strip, the huge hotels, casinos, restaurants and everything else packed into the city, there was plenty to explore before switching into conference mode.
 
-![Exploring Las Vegas before the conference](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/582ef0f6-76da-48c2-ab45-15bd428929ad-N3FNiEi3dl3DkeVF.jpg)
-
-![Las Vegas before VMware Explore](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e01778e7-960b-4811-a96f-c0292a464cee-pFt9Nm3QQdLRdTUL.jpg)
-
-![Sightseeing in Las Vegas](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/3d8baa5b-6dc9-4c6c-8a1d-ae5e84fd3a2d-gjqpNMUNDXASsThX.jpg)
+<div class="explore-gallery explore-gallery--three" aria-label="Photos from Las Vegas before VMware Explore">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/582ef0f6-76da-48c2-ab45-15bd428929ad-N3FNiEi3dl3DkeVF.jpg" alt="Las Vegas before the conference" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e01778e7-960b-4811-a96f-c0292a464cee-pFt9Nm3QQdLRdTUL.jpg" alt="Exploring Las Vegas" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/3d8baa5b-6dc9-4c6c-8a1d-ae5e84fd3a2d-gjqpNMUNDXASsThX.jpg" alt="Sightseeing in Las Vegas" loading="lazy" />
+</div>
 
 It was a great way to start the trip before a few very busy days at VMware Explore.
 
@@ -39,9 +39,10 @@ There was also some pretty cool motivation for passing. The VCAP certifications 
 
 Not a bad way to start a conference!
 
-![VMware Explore certifications](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/c66dafa4-8c14-44b7-aed7-82ef444576d1-nz0VP3U6wYQwhNfg.jpg)
-
-![Conference certification rewards](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/cf31fc91-26fe-41c9-ae5e-0f53f2b2aa5a-X00FaHrzCeFeRRNq.jpg)
+<div class="explore-gallery explore-gallery--two" aria-label="VMware Explore certification photos">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/c66dafa4-8c14-44b7-aed7-82ef444576d1-nz0VP3U6wYQwhNfg.jpg" alt="VMware Explore certifications" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/cf31fc91-26fe-41c9-ae5e-0f53f2b2aa5a-X00FaHrzCeFeRRNq.jpg" alt="Certification rewards" loading="lazy" />
+</div>
 
 After the exams, I headed into The Hub and spent some time at the Expert Bar.
 
@@ -63,13 +64,12 @@ There were also announcements around securing this new world of AI. VMware vDefe
 
 The plenary ended with one non-technical announcement: VMware Explore will return to Las Vegas in 2027, but it is moving to Resorts World Las Vegas and moving earlier in the year, May 3–6, 2027.
 
-![VMware Explore plenary](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/07a58683-a235-4cfb-b66c-919bee32f34d-6BirKJfhDJ4NjlAC.jpg)
-
-![Conference highlights](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/509da9fb-3af5-4a6b-ac47-c6e2cbe11938-CxF7QUgvFMcOLQE0.jpg)
-
-![VMware Explore presentation](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f098e154-55d0-4ceb-b6de-21091d43ab27-C9BcEZ6cSeKfJLIG.jpg)
-
-![VMware Explore 2026](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/93fe7d82-4f78-423e-ad5a-c40a7f95d7ee-t37hGt3uc5qBnFtV.jpg)
+<div class="explore-gallery explore-gallery--four" aria-label="Highlights from VMware Explore 2026">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/07a58683-a235-4cfb-b66c-919bee32f34d-6BirKJfhDJ4NjlAC.jpg" alt="VMware Explore plenary" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/509da9fb-3af5-4a6b-ac47-c6e2cbe11938-CxF7QUgvFMcOLQE0.jpg" alt="Conference highlight" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f098e154-55d0-4ceb-b6de-21091d43ab27-C9BcEZ6cSeKfJLIG.jpg" alt="VMware Explore presentation" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/93fe7d82-4f78-423e-ad5a-c40a7f95d7ee-t37hGt3uc5qBnFtV.jpg" alt="VMware Explore 2026" loading="lazy" />
+</div>
 
 ### A Lot Has Happened Since the Beginning
 
@@ -83,9 +83,10 @@ After the plenary, everyone moved into The Hub for the Welcome Reception. This i
 
 We met up with some fellow colleagues, grabbed some food and drinks and enjoyed the evening.
 
-![Welcome reception](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/3a203f69-13b1-4f25-9e43-01149e268b1b-p2e578DQwdhrGSvH.jpg)
-
-![Meeting the VMware community](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e10a99d4-2184-4b24-b4c5-eabe30b43707-wZdlMdWxTgG0f3Ap.jpg)
+<div class="explore-gallery explore-gallery--two" aria-label="Photos from the VMware Explore reception">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/3a203f69-13b1-4f25-9e43-01149e268b1b-p2e578DQwdhrGSvH.jpg" alt="Welcome reception" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e10a99d4-2184-4b24-b4c5-eabe30b43707-wZdlMdWxTgG0f3Ap.jpg" alt="VMware community" loading="lazy" />
+</div>
 
 Afterwards, we decided we still had room for more food and headed to Giordano's to try a proper Chicago-style deep-dish pizza.
 
@@ -167,9 +168,10 @@ The final puts the eight best qualifiers on stage and gives them another set of 
 
 Watching it is surprisingly entertaining for what is essentially eight people configuring IT infrastructure.
 
-![Odyssey finalists](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/5626d119-b646-4169-8779-268784f535ba-4knqrhXShKaZmDSX.jpg)
-
-![Odyssey finals at VMware Explore](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/edc012d4-a23b-486d-b428-5136a7fa54fd-jz7IpqC7mb2hNjdG.jpg)
+<div class="explore-gallery explore-gallery--two" aria-label="Photos from VMware Odyssey finals">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/5626d119-b646-4169-8779-268784f535ba-4knqrhXShKaZmDSX.jpg" alt="VMware Odyssey finalists" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/edc012d4-a23b-486d-b428-5136a7fa54fd-jz7IpqC7mb2hNjdG.jpg" alt="Odyssey finals" loading="lazy" />
+</div>
 
 The skill level was impressive. Watching people get a completely new technical problem, understand what is being asked and immediately start working through it is a great reminder that deep product knowledge and good troubleshooting skills are two very different things.
 
@@ -189,11 +191,11 @@ It forces you out of your normal bubble.
 
 You might start a conversation purely because you need some points for a challenge and walk away having learned about a technology you had never really considered before. That makes the gamification surprisingly effective.
 
-![Conference challenge prizes](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/cb8fd434-d3bd-459a-ba6a-9ba946f7e2a5-YbCJIE7oHKifXfQk.jpg)
-
-![Explore games and activities](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e75d0e60-ee82-4933-8e5e-aacfebe38ebf-egaqTJ6vtCkE3aXM.jpg)
-
-![More VMware Explore prizes](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f0601416-8a87-4083-bfd7-33b334c3d451-MN1rObmfN7cOCgQy.jpg)
+<div class="explore-gallery explore-gallery--three" aria-label="Games and prizes at VMware Explore">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/cb8fd434-d3bd-459a-ba6a-9ba946f7e2a5-YbCJIE7oHKifXfQk.jpg" alt="Conference challenge prizes" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/e75d0e60-ee82-4933-8e5e-aacfebe38ebf-egaqTJ6vtCkE3aXM.jpg" alt="Explore games and activities" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f0601416-8a87-4083-bfd7-33b334c3d451-MN1rObmfN7cOCgQy.jpg" alt="VMware Explore prizes" loading="lazy" />
+</div>
 
 ### The VMware Explore Party at TAO
 
@@ -207,13 +209,12 @@ The menu included things like Wagyu sliders, spicy tuna on crispy rice, chicken 
 
 After three long days of sessions, exams, labs and running around The Venetian, it was a great way to finish the main part of the conference.
 
-![The VMware Explore party](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/2240c976-457e-4451-8330-942ab81f75a9-icTY6Hpsgu1ZgmTC.jpg)
-
-![TAO Beach at VMware Explore](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f7cd58f9-cc69-43b8-9ae2-5942f74a88b9-p8XBZI9evR4HCd7b.jpg)
-
-![Conference party in Las Vegas](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/7fd788b9-a9bc-4871-92c4-b15e34466a62-prLkr3emFZ0zVIWT.jpg)
-
-![The closing party](https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/948d292a-446a-4bf7-98b8-7d238e5755fb-GueejrvXK9UyRnZI.jpg)
+<div class="explore-gallery explore-gallery--four" aria-label="Photos from the VMware Explore closing party">
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/2240c976-457e-4451-8330-942ab81f75a9-icTY6Hpsgu1ZgmTC.jpg" alt="VMware Explore party" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/f7cd58f9-cc69-43b8-9ae2-5942f74a88b9-p8XBZI9evR4HCd7b.jpg" alt="TAO Beach" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/7fd788b9-a9bc-4871-92c4-b15e34466a62-prLkr3emFZ0zVIWT.jpg" alt="Closing party in Las Vegas" loading="lazy" />
+  <img src="https://assets.zyrosite.com/mjEvvBk8E7IV6MKl/948d292a-446a-4bf7-98b8-7d238e5755fb-GueejrvXK9UyRnZI.jpg" alt="VMware Explore closing celebration" loading="lazy" />
+</div>
 
 ## Thursday, September 3 – Las Vegas to San Francisco
 
