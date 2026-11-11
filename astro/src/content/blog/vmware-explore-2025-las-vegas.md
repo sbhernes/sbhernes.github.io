@@ -73,18 +73,9 @@ The day wrapped up with the VMware Explore Party. Held on the pool deck at The P
 Looking back, VMware Explore was so much more than sessions, keynotes, and technology. It was an incredible team building journey. Traveling, learning, and celebrating together strengthened the connection with my colleagues, while also deepening my connection to the VMware community. Truly an unforgettable experience.
 
 
-<figure>
-<img src="/assets/images/4280c17a4ec8f172.jpg" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/173208ba851a0bf0.jpg" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/df6e7455bed78ebd.jpg" loading="lazy" />
-</figure>
-
-<figure>
-<img src="/assets/images/36b330024ae449c9.jpg" loading="lazy" />
-</figure>
+<div class="explore-gallery explore-gallery--four" aria-label="Photos from VMware Explore 2025 in Las Vegas">
+  <img src="/assets/images/4280c17a4ec8f172.jpg" alt="VMware Explore 2025 photo 1" loading="lazy" />
+  <img src="/assets/images/173208ba851a0bf0.jpg" alt="VMware Explore 2025 photo 2" loading="lazy" />
+  <img src="/assets/images/df6e7455bed78ebd.jpg" alt="VMware Explore 2025 photo 3" loading="lazy" />
+  <img src="/assets/images/36b330024ae449c9.jpg" alt="VMware Explore 2025 photo 4" loading="lazy" />
+</div>
