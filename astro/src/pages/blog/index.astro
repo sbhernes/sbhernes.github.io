@@ -3,7 +3,16 @@ import Base from '../../layouts/Base.astro';
 import {getCollection} from 'astro:content';
 import {topics,topicFor,readingMinutes,summaryFor} from '../../lib/topics';
 const posts=(await getCollection('blog',p=>!p.data.draft)).filter(p=>!['contact','disclaimer','test'].includes(p.slug));
-const displayPosts=posts.map(p=>({post:p,topic:topicFor(p.slug,p.data.title),minutes:readingMinutes(p.body)}));
+const displayPosts=posts.map(p=>({post:p,topic:topicFor(p.slug,p.data.title),minutes:readingMinutes(p.body)}))
+  .sort((a,b)=>{
+    const aDate=a.post.data.publishedAt?.getTime();
+    const bDate=b.post.data.publishedAt?.getTime();
+    if(aDate===undefined&&bDate===undefined)return a.post.data.title.localeCompare(b.post.data.title);
+    if(aDate===undefined)return 1;
+    if(bDate===undefined)return -1;
+    return bDate-aDate||a.post.data.title.localeCompare(b.post.data.title);
+  });
+const dateLabel=(date:Date)=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(date);
 ---
 <Base title="Articles" description="Technical field notes on VMware, virtualization, VCF and infrastructure automation.">
 <section class="listing-hero listing-hero-redesigned"><div class="container"><div class="eyebrow"><span class="status-dot"></span> THE VIRTUALVIKING ARCHIVE</div><h1>Ideas, lessons &<br /><em>field notes.</em></h1><p>Things that worked, things that broke, and everything learned in between. Hands-on writing from the world of virtualization and private cloud.</p><div class="archive-stats"><div><strong>{posts.length}</strong><span>Technical posts</span></div><div><strong>04</strong><span>Core topics</span></div><div><strong>100%</strong><span>From the field</span></div></div></div></section>
@@ -11,7 +20,7 @@ const displayPosts=posts.map(p=>({post:p,topic:topicFor(p.slug,p.data.title),min
 <div class="topic-filters" role="group" aria-label="Filter by topic">{topics.map((topic,i)=><button type="button" class:list={['topic-filter',{'is-active':i===0}]} data-topic={topic.id} aria-pressed={i===0}>{topic.label}</button>)}</div>
 <div class="results-row"><span id="result-count">{posts.length} articles</span><span>Knowledge shared, one lesson at a time.</span></div>
 <div class="article-grid" id="article-grid">
-{displayPosts.map(({post,topic,minutes})=><a class="article-card" data-topic={topic.id} data-search={`${post.data.title} ${summaryFor(post.data.description,post.body)} ${post.slug} ${topic.label}`.toLowerCase()} href={`/${post.slug}/`}><div class="card-image">{post.data.cover?<img src={post.data.cover} alt="" loading="lazy" />:<span class="card-placeholder">ᚢ</span>}<span class="card-image-shade"></span></div><div class="card-body"><div class="card-topline"><span class="card-kicker">{topic.label}</span><span>{minutes} min</span></div><h3>{post.data.title}</h3><p>{summaryFor(post.data.description,post.body)}</p><span class="card-link">Read field note <span aria-hidden="true">↗</span></span></div></a>)}
+{displayPosts.map(({post,topic,minutes})=><a class="article-card" data-topic={topic.id} data-search={`${post.data.title} ${summaryFor(post.data.description,post.body)} ${post.slug} ${topic.label}`.toLowerCase()} href={`/${post.slug}/`}><div class="card-image">{post.data.cover?<img src={post.data.cover} alt="" loading="lazy" />:<span class="card-placeholder">ᚢ</span>}<span class="card-image-shade"></span></div><div class="card-body"><div class="card-topline"><span class="card-kicker">{topic.label}</span><span class="card-reading-meta">{minutes} min{post.data.publishedAt&&<> · <time datetime={post.data.publishedAt.toISOString().slice(0,10)}>{dateLabel(post.data.publishedAt)}</time></>}</span></div><h3>{post.data.title}</h3><p>{summaryFor(post.data.description,post.body)}</p><span class="card-link">Read field note <span aria-hidden="true">↗</span></span></div></a>)}
 </div><p class="empty-state" id="no-results" hidden>No matching articles. Try another search or topic.</p></section>
 <script is:inline>
 const search=document.querySelector('#article-search'),cards=[...document.querySelectorAll('#article-grid .article-card')],count=document.querySelector('#result-count'),empty=document.querySelector('#no-results'),filters=[...document.querySelectorAll('.topic-filter')];
