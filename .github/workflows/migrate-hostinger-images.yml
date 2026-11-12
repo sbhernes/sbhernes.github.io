@@ -1,0 +1,32 @@
+name: Migrate Hostinger images (one-time)
+on:
+  push:
+    branches: [migrate-hostinger-images]
+    paths:
+      - 'scripts/migrate-hostinger-images.mjs'
+      - '.github/workflows/migrate-hostinger-images.yml'
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download and validate all Hostinger image references
+        run: node scripts/migrate-hostinger-images.mjs
+      - name: Commit verified local images and Markdown updates on migration branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add astro/src astro/public/assets/images/hostinger
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Hostinger images locally and update article links"
+            git push
+          else
+            echo "No external images left to migrate."
+          fi
