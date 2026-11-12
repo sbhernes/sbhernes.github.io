@@ -2,7 +2,7 @@
 title: "VCF Automation 9: Understanding the Fundamentals"
 description: "Making sense of VCF Automation 9 All Apps: regions, organizations, projects, namespaces, VPCs and the networking behind a practical landing zone."
 slug: "vcf-automation-overview"
-cover: "/assets/images/99dcb728cde74c6c.jpg"
+cover: "https://i0.wp.com/theaistack.blog/wp-content/uploads/2025/08/image-4.png?resize=1546%2C952&ssl=1"
 draft: false
 ---
 
@@ -43,7 +43,8 @@ I wouldn't describe All Apps as “VM Apps with Kubernetes added.” The way you
 For this article, I'm focusing on **All Apps**. If you're already running VM Apps and have a collection of blueprints, don't assume they'll work unchanged in All Apps.
 
 <figure>
-<img src="/assets/images/99dcb728cde74c6c.jpg" loading="lazy" alt="Illustration used for VCF Automation 9 fundamentals" />
+<img src="https://i0.wp.com/theaistack.blog/wp-content/uploads/2025/08/image-4.png?resize=1546%2C952&amp;ssl=1" loading="lazy" alt="VCF Automation tenant hierarchy, showing provider and tenant objects" />
+<figcaption>VCF Automation tenant relationships. Image: <a href="https://theaistack.blog/2025/08/12/vcf-automation-tenant-management/">VMTECHIE</a>.</figcaption>
 </figure>
 
 ## Start at the provider layer
@@ -129,7 +130,8 @@ Regional networking is where the provider connects the organization to the appro
 If you can see a region but can't deploy workloads with the network connectivity you expect, this is one of the areas worth checking.
 
 <figure>
-<img src="/assets/images/bb48cb8dfba1215a.png" loading="lazy" alt="Existing VCF Automation networking illustration" />
+<img src="https://vmcheese.com/media/posts/11/VPC_Components.png" loading="lazy" alt="NSX VPC components and administrative roles" />
+<figcaption>NSX VPC building blocks. Image: <a href="https://vmcheese.com/all-of-the-ways-to-deploy-and-use-vpcs-in-vcf-9-part-1.html">vmcheese</a>.</figcaption>
 </figure>
 
 ### Transit Gateway and VPC: the organization network and the application network
@@ -159,7 +161,8 @@ Whichever approach you choose, you still need to think about the return route, f
 I learned pretty quickly that **“the workload has an IP” and “the workload is reachable” are two very different statements**.
 
 <figure>
-<img src="/assets/images/06260b8dedd4a861.png" loading="lazy" alt="Existing diagram showing VCF Automation infrastructure and network configuration" />
+<img src="https://vmcheese.com/media/posts/11/ExternalConnectivityOptions.jpeg" loading="lazy" alt="Centralized and distributed Transit Gateway connectivity in VCF 9" />
+<figcaption>Transit Gateway connectivity options in VCF 9. Image: <a href="https://vmcheese.com/all-of-the-ways-to-deploy-and-use-vpcs-in-vcf-9-part-1.html">vmcheese</a>.</figcaption>
 </figure>
 
 ## Then we get to Projects and Namespaces
@@ -201,7 +204,8 @@ Instead of asking every application owner to work out appropriate resource limit
 For a production platform, I would spend time on these defaults early. Otherwise, self-service can easily turn into everyone building something slightly different.
 
 <figure>
-<img src="/assets/images/658485fa9e5757cb.png" loading="lazy" alt="Existing illustration showing projects, namespaces and workload resources" />
+<img src="https://devynharrington.com/images/vcf/vcf-automation-all-apps/72newnamespace72.png" loading="lazy" alt="VCF Automation 9 namespace configuration screen" />
+<figcaption>A real All Apps namespace configuration screen. Image: <a href="https://devynharrington.com/vcf/building-an-all-apps-organization-in-vcf-automation-9/">Devyn Harrington</a>.</figcaption>
 </figure>
 
 ## Putting it together: an example landing zone
@@ -275,9 +279,7 @@ That last one is particularly important. It's easy to end up with a region, orga
 
 ## The big picture
 
-<figure>
-<img src="/assets/images/a8524555ecf759bb.png" loading="lazy" alt="Original VCF Automation architecture overview diagram" />
-</figure>
+
 
 If I had to explain the main concepts to somebody starting with VCF Automation 9, I'd put them like this:
 
