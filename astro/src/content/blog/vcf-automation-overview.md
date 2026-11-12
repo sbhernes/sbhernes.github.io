@@ -279,6 +279,11 @@ That last one is particularly important. It's easy to end up with a region, orga
 
 ## The big picture
 
+<figure>
+<img src="/assets/images/vcf-automation/vcf-automation-big-picture.svg" loading="lazy" alt="VCF Automation 9 All Apps architecture diagram showing provider regions and Supervisors, an organization with Inventory and HR projects, namespaces, workloads, VPCs and the underlying VCF platform" />
+<figcaption>Conceptual All Apps layout: Regions provide infrastructure capacity, while the organization contains projects with namespaces and VPC networking. Diagram created for VirtualViking.</figcaption>
+</figure>
+
 
 
 If I had to explain the main concepts to somebody starting with VCF Automation 9, I'd put them like this:

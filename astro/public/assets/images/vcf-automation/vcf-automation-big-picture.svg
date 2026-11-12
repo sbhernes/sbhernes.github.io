@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+<title id="title">VCF Automation 9: The Big Picture</title>
+<desc id="desc">An All Apps architecture overview showing provider-managed regions and Supervisor clusters to the left; a tenant organization containing two projects, their vSphere namespaces, workloads and VPC networks to the right; and VMware Cloud Foundation beneath both. Dashed arrows indicate region placement, not ownership.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071423"/><stop offset=".65" stop-color="#0b2939"/><stop offset="1" stop-color="#071827"/></linearGradient><linearGradient id="teal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#114658"/><stop offset="1" stop-color="#103444"/></linearGradient><linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#18553e"/><stop offset="1" stop-color="#267c56"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#74e2d0" stroke-width="1.8"/></marker></defs>
+<rect width="1600" height="960" fill="url(#bg)"/>
+<path d="M0 880 Q250 792 500 850 T1000 832 T1600 852" stroke="#157a81" stroke-width="3" fill="none" opacity=".4"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="64" y="76" font-size="48" font-weight="800" fill="#f2fbfc">VCF Automation 9: The Big Picture</text>
+<text x="66" y="119" font-size="23" fill="#a8d8db">From provider infrastructure to self-service VMs and Kubernetes workloads</text>
+<rect x="64" y="153" width="450" height="53" rx="12" fill="#16435a" stroke="#388bab" stroke-width="2"/>
+<text x="90" y="188" font-size="25" font-weight="700" fill="#c3e8f6">PROVIDER  ·  Infrastructure supply</text>
+<rect x="544" y="153" width="992" height="53" rx="12" fill="#0c4c54" stroke="#47c2b5" stroke-width="2"/>
+<text x="570" y="188" font-size="25" font-weight="700" fill="#bff9e8">CONSUMER  ·  All Apps organization</text>
+<!-- Provider column -->
+<rect x="64" y="227" width="450" height="514" rx="24" fill="#0d293b" stroke="#2c728c" stroke-width="2"/>
+<text x="93" y="274" font-size="29" font-weight="750" fill="#f2fbfc">Regions &amp; infrastructure</text>
+<text x="93" y="309" font-size="19" fill="#acd1df">Provider exposes approved Supervisor capacity</text>
+<rect x="94" y="339" width="390" height="155" rx="17" fill="#134254" stroke="#4bb8ca" stroke-width="2.5"/>
+<text x="119" y="376" font-size="29" font-weight="700" fill="#ebfdff">Region: South</text>
+<text x="119" y="410" font-size="20" fill="#a1dce8">Production / approved storage</text>
+<rect x="119" y="430" width="338" height="44" rx="11" fill="#1c6071"/>
+<text x="141" y="458" font-size="20" font-weight="650" fill="#e5fafd">Supervisor cluster(s)</text>
+<rect x="94" y="512" width="390" height="155" rx="17" fill="#134254" stroke="#4bb8ca" stroke-width="2.5"/>
+<text x="119" y="549" font-size="29" font-weight="700" fill="#ebfdff">Region: North</text>
+<text x="119" y="583" font-size="20" fill="#a1dce8">Production / approved storage</text>
+<rect x="119" y="603" width="338" height="44" rx="11" fill="#1c6071"/>
+<text x="141" y="631" font-size="20" font-weight="650" fill="#e5fafd">Supervisor cluster(s)</text>
+<text x="98" y="706" font-size="18" fill="#8dbccc">Region = available capacity, not tenant ownership</text>
+<!-- Organization -->
+<rect x="544" y="227" width="992" height="514" rx="24" fill="#0d2835" stroke="#359e9c" stroke-width="2"/>
+<rect x="568" y="248" width="944" height="78" rx="16" fill="#117d85" stroke="#55e1c5" stroke-width="2"/>
+<text x="595" y="284" font-size="29" font-weight="800" fill="#efffff">Organization: Internal IT</text>
+<text x="595" y="308" font-size="19" fill="#d1fcf5">All Apps · tenant boundary · region quota · identity &amp; access</text>
+<!-- projects -->
+<rect x="568" y="346" width="454" height="373" rx="17" fill="#0e3446" stroke="#33bfd0" stroke-width="2.5"/>
+<rect x="1040" y="346" width="472" height="373" rx="17" fill="#0e3446" stroke="#33bfd0" stroke-width="2.5"/>
+<rect x="583" y="362" width="424" height="59" rx="11" fill="#176b7c"/>
+<rect x="1055" y="362" width="442" height="59" rx="11" fill="#176b7c"/>
+<text x="603" y="391" font-size="27" font-weight="750" fill="#f4ffff">Project: Inventory</text>
+<text x="603" y="411" font-size="16" fill="#b8ebec">Application ownership &amp; permissions</text>
+<text x="1075" y="391" font-size="27" font-weight="750" fill="#f4ffff">Project: HR</text>
+<text x="1075" y="411" font-size="16" fill="#b8ebec">Application ownership &amp; permissions</text>
+<!-- namespaces -->
+<rect x="583" y="438" width="202" height="78" rx="11" fill="url(#teal)" stroke="#60d9d0" stroke-width="2"/>
+<rect x="801" y="438" width="206" height="78" rx="11" fill="url(#teal)" stroke="#60d9d0" stroke-width="2"/>
+<rect x="1055" y="438" width="210" height="78" rx="11" fill="url(#teal)" stroke="#60d9d0" stroke-width="2"/>
+<rect x="1282" y="438" width="215" height="78" rx="11" fill="url(#teal)" stroke="#60d9d0" stroke-width="2"/>
+<g font-size="19" fill="#f1ffff" font-weight="650"><text x="598" y="467">vSphere Namespace</text><text x="598" y="493" fill="#8bf1dc">app-prod</text><text x="817" y="467">vSphere Namespace</text><text x="817" y="493" fill="#8bf1dc">db-prod</text><text x="1070" y="467">vSphere Namespace</text><text x="1070" y="493" fill="#8bf1dc">app-prod</text><text x="1297" y="467">vSphere Namespace</text><text x="1297" y="493" fill="#8bf1dc">db-prod</text></g>
+<!-- workload badges -->
+<g font-size="19" font-weight="650"><rect x="585" y="537" width="196" height="53" rx="10" fill="#174a59"/><text x="606" y="571" fill="#ccf9f0">VMs · VKS</text><rect x="803" y="537" width="202" height="53" rx="10" fill="#174a59"/><text x="826" y="571" fill="#ccf9f0">VMs · services</text><rect x="1056" y="537" width="207" height="53" rx="10" fill="#174a59"/><text x="1077" y="571" fill="#ccf9f0">VMs · VKS</text><rect x="1283" y="537" width="213" height="53" rx="10" fill="#174a59"/><text x="1303" y="571" fill="#ccf9f0">VMs · services</text></g>
+<!-- VPCs independent networking layer -->
+<rect x="583" y="612" width="424" height="90" rx="13" fill="#154449" stroke="#8ce0b8" stroke-width="2"/>
+<rect x="1055" y="612" width="442" height="90" rx="13" fill="#154449" stroke="#8ce0b8" stroke-width="2"/>
+<text x="602" y="646" font-size="26" font-weight="750" fill="#c9ffdd">VPC: inventory-prod</text>
+<text x="602" y="675" font-size="18" fill="#ade9cb">App subnet · Database subnet</text>
+<text x="1074" y="646" font-size="26" font-weight="750" fill="#c9ffdd">VPC: hr-prod</text>
+<text x="1074" y="675" font-size="18" fill="#ade9cb">App subnet · Database subnet</text>
+<!-- region relationships -->
+<path d="M484 410 C518 410 526 452 557 470" fill="none" stroke="#6ce0d2" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#arrow)"/>
+<path d="M484 588 C520 588 525 489 557 488" fill="none" stroke="#6ce0d2" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#arrow)" opacity=".75"/>
+<text x="588" y="758" font-size="18" fill="#a8d0d3">Namespaces consume Supervisor capacity in a selected region; VPCs provide their networking.</text>
+<!-- Foundation -->
+<rect x="64" y="801" width="1472" height="105" rx="21" fill="url(#green)" stroke="#91e4a8" stroke-width="3"/>
+<text x="800" y="849" text-anchor="middle" font-size="36" font-weight="800" fill="#f5fff3">VMware Cloud Foundation 9</text>
+<text x="800" y="883" text-anchor="middle" font-size="23" fill="#ddf8e4">vSphere  ·  Supervisor  ·  vSAN / Storage  ·  NSX  ·  Operations &amp; Management</text>
+<text x="65" y="937" font-size="17" fill="#95bec4">Conceptual design example · Projects organize consumers; Regions provide placement; VPCs are networking boundaries.</text>
+</g></svg>
