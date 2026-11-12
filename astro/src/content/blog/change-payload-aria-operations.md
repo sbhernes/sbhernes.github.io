@@ -2,7 +2,7 @@
 title: "Change payload from aria operations to Slack"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "change-payload-aria-operations"
-cover: ""
+cover: "/assets/images/covers/change-payload-aria-operations.svg"
 draft: false
 ---
 

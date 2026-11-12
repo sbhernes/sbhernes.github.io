@@ -2,7 +2,7 @@
 title: "Simplifying Aria Operations Alarm Notifications in Slack"
 description: "Discover insights on virtualization and cloud-native technologies. This blog by Sondre Hernes focuses on VMware, providing valuable information and resources for enthusiasts and professionals in the field. Join the conversation and enhance your understanding of modern tech solutions."
 slug: "operations-to-slack"
-cover: ""
+cover: "/assets/images/covers/operations-to-slack.svg"
 publishedAt: 2025-10-21
 draft: false
 ---
