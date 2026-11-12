@@ -1,0 +1,29 @@
+name: Verify external VCF Automation images
+on:
+  push:
+    branches: [vcf-automation-real-technical-diagrams]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check images
+        run: |
+          set -e
+          for url in \
+            'https://i0.wp.com/theaistack.blog/wp-content/uploads/2025/08/image-4.png?resize=1546%2C952&ssl=1' \
+            'https://vmcheese.com/media/posts/11/VPC_Components.png' \
+            'https://vmcheese.com/media/posts/11/ExternalConnectivityOptions.jpeg' \
+            'https://devynharrington.com/images/vcf/vcf-automation-all-apps/72newnamespace72.png'
+          do
+            echo "Checking $url"
+            curl -L --fail --silent --show-error --max-time 35 --retry 1 -o /tmp/cover --write-out "%{http_code} %{content_type} %{size_download}\n" "$url"
+            file --mime-type /tmp/cover | grep -E 'image/(png|jpeg|webp)' || exit 1
+          done
+      - name: Build
+        run: cd astro && npm ci && npm run build
