@@ -1,0 +1,32 @@
+name: Download VCF Automation article diagrams (one time)
+on:
+  push:
+    branches: [selfhost-vcf-automation-diagrams]
+    paths:
+      - 'scripts/selfhost-vcf-automation-diagrams.mjs'
+      - '.github/workflows/selfhost-vcf-automation-diagrams.yml'
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download and validate diagrams
+        run: node scripts/selfhost-vcf-automation-diagrams.mjs
+      - name: Build the site
+        run: cd astro && npm ci && npm run build
+      - name: Commit verified images to working branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add astro/src/content/blog/vcf-automation-overview.md astro/public/assets/images/vcf-automation
+          if ! git diff --cached --quiet; then
+            git commit -m "Self-host VCF Automation diagrams with original source credits"
+            git push
+          fi
