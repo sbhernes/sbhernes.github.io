@@ -4,6 +4,7 @@ description: "Making sense of VCF Automation 9 All Apps: regions, organizations,
 slug: "vcf-automation-overview"
 cover: "/assets/images/vcf-automation/vcf-automation-tenant-structure.png"
 draft: false
+publishedAt: 2026-12-02
 ---
 
 # Figuring Out VCF Automation 9
